@@ -1,0 +1,10 @@
+name: First Workflow  # Workflow name (anything)
+on: workflow_dispatch # When to execute this Workflow (pre-defined)
+jobs: # Multiple jobs; runs parallel by default
+  first_job: # Job name (anything)
+    runs-on: ubuntu-latest # Define runner (pre-defined). Search 'github-hosted runners'
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!!!"
+      - name: Print goodbye
+        run: echo "Done - bye"
